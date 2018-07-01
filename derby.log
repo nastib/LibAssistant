@@ -1,10 +1,10 @@
 ----------------------------------------------------------------
-Thu Jun 07 10:19:43 WAT 2018:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.12.1.1 - (1704137): instance a816c00e-0163-d98b-6945-000003067c70 
-on database directory C:\NetBeansProjects\LibAssistant\database\library with class loader sun.misc.Launcher$AppClassLoader@4aa298b7 
-Loaded from file:/C:/NetBeansProjects/LibAssistant/dist/run2107721570/lib/derby.jar
+Sat Jun 30 21:34:14 WAT 2018:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.12.1.1 - (1704137): instance a816c00e-0164-5267-3b03-000002e46070 
+on database directory C:\NetBeansProjects\LibAssistant\database\library with class loader sun.misc.Launcher$AppClassLoader@55f96302 
+Loaded from file:/C:/NetBeansProjects/LibAssistant/dist/run1270455265/lib/derby.jar
 java.vendor=Oracle Corporation
-java.runtime.version=1.8.0_171-b11
+java.runtime.version=1.8.0_172-b11
 user.dir=C:\NetBeansProjects\LibAssistant
 os.name=Windows 10
 os.arch=amd64
