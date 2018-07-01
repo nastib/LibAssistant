@@ -21,7 +21,7 @@
 
 <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="466.0" prefWidth="669.0" stylesheets="@../../ressources/main.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.javafx.libassistant.ui.main.MainController">
    <children>
-      <BorderPane prefHeight="489.0" prefWidth="695.0">
+      <BorderPane prefHeight="200.0" prefWidth="200.0">
          <top>
             <MenuBar BorderPane.alignment="CENTER">
               <menus>
@@ -46,29 +46,29 @@
          <right>
             <VBox prefHeight="410.0" prefWidth="127.0">
                <children>
-                  <Button alignment="TOP_CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#addMemberLoader" prefHeight="91.0" prefWidth="127.0" text="Add Member">
+                  <Button alignment="TOP_CENTER" contentDisplay="TOP" mnemonicParsing="false" prefHeight="91.0" prefWidth="127.0" text="Add Member">
                      <graphic>
-                        <FontAwesomeIconView fill="#141edd" glyphName="USER_PLUS" size="34" textOrigin="TOP" wrappingWidth="22.00006103515625" />
+                        <FontAwesomeIconView glyphName="USER_PLUS" size="34" textOrigin="TOP" wrappingWidth="22.00006103515625" />
                      </graphic>
                   </Button>
-                  <Button alignment="TOP_CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#addBookLoader" prefHeight="96.0" prefWidth="127.0" text="Add Book">
+                  <Button alignment="TOP_CENTER" contentDisplay="TOP" mnemonicParsing="false" prefHeight="96.0" prefWidth="127.0" text="Add Book">
                      <graphic>
-                        <FontAwesomeIconView fill="#141edd" glyphName="BOOK" size="34" textOrigin="TOP" wrappingWidth="22.00006103515625" />
+                        <FontAwesomeIconView glyphName="BOOK" size="34" textOrigin="TOP" wrappingWidth="22.00006103515625" />
                      </graphic>
                   </Button>
-                  <Button alignment="TOP_CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#listMemberLoader" prefHeight="98.0" prefWidth="127.0" text="View Member">
+                  <Button alignment="TOP_CENTER" contentDisplay="TOP" mnemonicParsing="false" prefHeight="98.0" prefWidth="127.0" text="View Member">
                      <graphic>
-                        <FontAwesomeIconView fill="#141edd" glyphName="USERS" size="34" textOrigin="TOP" wrappingWidth="22.00006103515625" />
+                        <FontAwesomeIconView glyphName="USERS" size="34" textOrigin="TOP" wrappingWidth="22.00006103515625" />
                      </graphic>
                   </Button>
-                  <Button alignment="TOP_CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#listBookLoader" prefHeight="95.0" prefWidth="127.0" text="View Book">
+                  <Button alignment="TOP_CENTER" contentDisplay="TOP" mnemonicParsing="false" prefHeight="95.0" prefWidth="127.0" text="View Book">
                      <graphic>
-                        <FontAwesomeIconView fill="#141edd" glyphName="TH_LIST" size="34" textOrigin="TOP" wrappingWidth="22.00006103515625" />
+                        <FontAwesomeIconView glyphName="TH_LIST" size="34" textOrigin="TOP" wrappingWidth="22.00006103515625" />
                      </graphic>
                   </Button>
-                  <Button alignment="TOP_CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#loadSettings" prefHeight="85.0" prefWidth="127.0" text="Settings">
+                  <Button alignment="TOP_CENTER" contentDisplay="TOP" mnemonicParsing="false" prefHeight="85.0" prefWidth="127.0" text="Settings">
                      <graphic>
-                        <FontAwesomeIconView fill="#141edd" glyphName="COG" size="34" textOrigin="TOP" wrappingWidth="22.00006103515625" />
+                        <FontAwesomeIconView glyphName="COG" size="34" textOrigin="TOP" wrappingWidth="22.00006103515625" />
                      </graphic>
                   </Button>
                </children>
@@ -86,16 +86,16 @@
                            <children>
                               <VBox prefHeight="346.0" prefWidth="473.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="9.0" AnchorPane.topAnchor="0.0">
                                  <children>
-                                    <HBox fx:id="bookInfo" alignment="CENTER" prefHeight="177.0" prefWidth="533.0" style="-fx-background-color: #e7e7e7;">
+                                    <HBox alignment="CENTER" prefHeight="153.0" prefWidth="533.0">
                                        <children>
-                                          <JFXTextField fx:id="bookIDInput" labelFloat="true" onAction="#loadBookInfo" prefHeight="25.0" prefWidth="209.0" promptText="Enter Book ID">
+                                          <JFXTextField labelFloat="true" prefHeight="25.0" prefWidth="209.0" promptText="Add Book ID">
                                              <HBox.margin>
                                                 <Insets left="20.0" />
                                              </HBox.margin>
                                           </JFXTextField>
                                           <VBox alignment="CENTER" prefHeight="100.0" prefWidth="341.0">
                                              <children>
-                                                <Text fx:id="bookTitle" strokeType="OUTSIDE" strokeWidth="0.0" text="Title" textAlignment="CENTER" wrappingWidth="306.13671875">
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Book  Title" textAlignment="CENTER" wrappingWidth="306.13671875">
                                                    <VBox.margin>
                                                       <Insets bottom="5.0" left="10.0" right="10.0" />
                                                    </VBox.margin>
@@ -103,21 +103,13 @@
                                                       <Font name="System Bold" size="12.0" />
                                                    </font>
                                                 </Text>
-                                                <Text fx:id="bookAuthor" strokeType="OUTSIDE" strokeWidth="0.0" text="Author" textAlignment="CENTER" wrappingWidth="306.13671875">
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Author" textAlignment="CENTER" wrappingWidth="306.13671875">
                                                    <VBox.margin>
                                                       <Insets left="10.0" right="10.0" top="5.0" />
                                                    </VBox.margin>
                                                    <font>
                                                       <Font name="System Bold" size="12.0" />
                                                    </font>
-                                                </Text>
-                                                <Text fx:id="bookStatus" layoutX="20.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status" textAlignment="CENTER" wrappingWidth="306.13671875">
-                                                   <font>
-                                                      <Font name="System Bold" size="12.0" />
-                                                   </font>
-                                                   <VBox.margin>
-                                                      <Insets top="10.0" />
-                                                   </VBox.margin>
                                                 </Text>
                                              </children>
                                              <HBox.margin>
@@ -125,20 +117,17 @@
                                              </HBox.margin>
                                           </VBox>
                                        </children>
-                                       <VBox.margin>
-                                          <Insets bottom="10.0" left="20.0" right="20.0" top="20.0" />
-                                       </VBox.margin>
                                     </HBox>
-                                    <HBox fx:id="memberInfo" alignment="CENTER" prefHeight="192.0" prefWidth="523.0" style="-fx-background-color: #e7e7e7;">
+                                    <HBox alignment="CENTER" prefHeight="157.0" prefWidth="523.0">
                                        <children>
-                                          <JFXTextField fx:id="memberIDInput" labelFloat="true" onAction="#loadMemberInfo" prefHeight="25.0" prefWidth="209.0" promptText="Enter Member ID">
+                                          <JFXTextField labelFloat="true" prefHeight="25.0" prefWidth="209.0" promptText="Add Member ID">
                                              <HBox.margin>
                                                 <Insets left="20.0" />
                                              </HBox.margin>
                                           </JFXTextField>
                                           <VBox alignment="CENTER" prefHeight="100.0" prefWidth="341.0">
                                              <children>
-                                                <Text fx:id="memberName" strokeType="OUTSIDE" strokeWidth="0.0" text="Member Name" textAlignment="CENTER" wrappingWidth="306.13671875">
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Member Name" textAlignment="CENTER" wrappingWidth="306.13671875">
                                                    <VBox.margin>
                                                       <Insets left="10.0" right="10.0" />
                                                    </VBox.margin>
@@ -146,7 +135,7 @@
                                                       <Font name="System Bold" size="12.0" />
                                                    </font>
                                                 </Text>
-                                                <Text fx:id="mobile" strokeType="OUTSIDE" strokeWidth="0.0" text="Mobile" textAlignment="CENTER" wrappingWidth="306.13671875">
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Contact" textAlignment="CENTER" wrappingWidth="306.13671875">
                                                    <VBox.margin>
                                                       <Insets left="10.0" right="10.0" top="5.0" />
                                                    </VBox.margin>
@@ -154,30 +143,19 @@
                                                       <Font name="System Bold" size="12.0" />
                                                    </font>
                                                 </Text>
-                                                <Text fx:id="email" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" textAlignment="CENTER" wrappingWidth="306.13671875">
-                                                   <font>
-                                                      <Font name="System Bold" size="12.0" />
-                                                   </font>
-                                                   <VBox.margin>
-                                                      <Insets top="5.0" />
-                                                   </VBox.margin>
-                                                </Text>
                                              </children>
                                           </VBox>
                                        </children>
                                        <VBox.margin>
-                                          <Insets bottom="20.0" left="20.0" right="20.0" top="10.0" />
+                                          <Insets left="10.0" />
                                        </VBox.margin>
                                     </HBox>
-                                    <HBox alignment="CENTER" prefHeight="107.0" prefWidth="533.0">
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
                                        <children>
-                                          <JFXButton fx:id="btnIssue" buttonType="RAISED" onAction="#loadIssueOperation" prefHeight="30.0" prefWidth="97.0" text="Issue">
+                                          <JFXButton prefHeight="38.0" prefWidth="103.0" text="Issue">
                                              <font>
                                                 <Font name="System Bold" size="12.0" />
                                              </font>
-                                             <graphic>
-                                                <FontAwesomeIconView fill="WHITE" glyphName="CALENDAR_CHECK_ALT" size="18" />
-                                             </graphic>
                                           </JFXButton>
                                        </children>
                                     </HBox>
@@ -193,21 +171,17 @@
                            <children>
                               <BorderPane layoutX="51.0" layoutY="134.0" prefHeight="412.0" prefWidth="542.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                  <center>
-                                    <HBox fx:id="paneChildren" BorderPane.alignment="CENTER">
+                                    <ListView prefHeight="330.0" prefWidth="522.0" BorderPane.alignment="CENTER">
                                        <BorderPane.margin>
                                           <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                                        </BorderPane.margin>
-                                       <children>
-                                          <ListView fx:id="issueDataList" prefHeight="330.0" prefWidth="522.0">
-                                             <padding>
-                                                <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
-                                             </padding>
-                                          </ListView>
-                                       </children>
-                                    </HBox>
+                                       <padding>
+                                          <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                                       </padding>
+                                    </ListView>
                                  </center>
                                  <top>
-                                    <JFXTextField fx:id="bookID" labelFloat="true" maxWidth="-Infinity" onAction="#loadBookInfo2" prefHeight="25.0" prefWidth="146.0" promptText="Enter Book ID" BorderPane.alignment="CENTER">
+                                    <JFXTextField labelFloat="true" maxWidth="-Infinity" prefHeight="25.0" prefWidth="218.0" promptText="Enter Book ID" BorderPane.alignment="CENTER">
                                        <BorderPane.margin>
                                           <Insets top="15.0" />
                                        </BorderPane.margin>
@@ -216,21 +190,15 @@
                                  <bottom>
                                     <HBox alignment="CENTER" prefHeight="53.0" prefWidth="542.0" BorderPane.alignment="CENTER">
                                        <children>
-                                          <JFXButton fx:id="btnRemew" onAction="#loadRenewOperation" prefHeight="31.0" prefWidth="100.0" text="Renew">
+                                          <JFXButton prefHeight="25.0" prefWidth="80.0" text="Renew">
                                              <HBox.margin>
                                                 <Insets right="5.0" />
                                              </HBox.margin>
-                                             <graphic>
-                                                <FontAwesomeIconView fx:id="SYNC_ALT" fill="WHITE" glyphName="REFRESH" size="18" />
-                                             </graphic>
                                           </JFXButton>
-                                          <JFXButton fx:id="btnSubmission" onAction="#loadSubmissionOperation" prefHeight="31.0" prefWidth="100.0" text="Submission">
+                                          <JFXButton text="Submission">
                                              <HBox.margin>
                                                 <Insets right="5.0" />
                                              </HBox.margin>
-                                             <graphic>
-                                                <FontAwesomeIconView fill="WHITE" glyphName="CHECK" size="18" />
-                                             </graphic>
                                           </JFXButton>
                                        </children>
                                     </HBox>
